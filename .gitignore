@@ -1,0 +1,5 @@
+calculators/__pycache__/*
+console/__pycache__/*
+console/controllers/__pycache__/*
+gui/__pycache__/*
+gui/components/__pycache__/*
