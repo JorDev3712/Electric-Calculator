@@ -1,11 +1,11 @@
 # Metodos
 
-from calculators.perkert import MathPerkert
+from calculators.peukert import MathPeukert
 
 def execute(opt: int)->bool:
     exit = False
     if opt == 11:
-        cal = Perkert()
+        cal = MathPeukert()
         cal.showMenu()
     elif opt == 3:
         print('Closing...! Hasta pronto!')

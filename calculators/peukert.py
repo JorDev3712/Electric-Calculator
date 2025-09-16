@@ -1,6 +1,6 @@
 # Online Python - IDE, Editor, Compiler, Interpreter
 
-class MathPerkert:
+class MathPeukert:
 
     # Methods
     def calculate(self, a, c = 20):
