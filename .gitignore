@@ -3,3 +3,6 @@ console/__pycache__/*
 console/controllers/__pycache__/*
 gui/__pycache__/*
 gui/components/__pycache__/*
+dominion/__pycache__/*
+dominion/__pycache__/*
+util/__pycache__/*

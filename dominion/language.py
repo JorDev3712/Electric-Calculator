@@ -1,6 +1,5 @@
 class Language:
-    def __init__(self, id, code, text):
-        self.__id = id
+    def __init__(self, code: str, text: str):
         self.__code = code
         self.text = text
 
