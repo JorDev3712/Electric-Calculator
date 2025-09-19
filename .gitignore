@@ -6,3 +6,4 @@ gui/components/__pycache__/*
 dominion/__pycache__/*
 dominion/__pycache__/*
 util/__pycache__/*
+.venv/

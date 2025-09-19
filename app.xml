@@ -2,7 +2,25 @@
     <language def="es">
         <word code="title" text="Calculadora para Electricidad" />
         <word code="menu_title" text="Opciones:" />
+        <word code="menu_select_option" text="Selecciona una opción:" />
+        <word code="menu_language_title" text="Escoge el idioma: " />
         <word code="menu_language_option_1" text="Español" />
+        <word code="menu_language_option_2" text="Inglés" />
+        <word code="menu_opt_1" text="Corriente alterna" />
+        <word code="menu_opt_2" text="Corriente continua" />
+        <word code="menu_exit" text="Salir" />
+        <word code="sub_1_menu_opt_1" text="Monofásico." />
+        <word code="sub_1_menu_opt_2" text="Trifásico." />
+        <word code="power" text="Calcular potencia (kVA)." />
+        <word code="real_power" text="Calcular potencia real (kW)." />
+        <word code="good_bye_text" text="Cerrando... ¡Hasta pronto!" />
+    </language>
+    <language def="en">
+        <word code="title" text="Calculadora para Electricidad" />
+        <word code="menu_title" text="Opciones:" />
+        <word code="menu_select_option" text="Choose an option: " />
+        <word code="menu_language_title" text="Escoge el idioma:" />
+        <word code="menu_language_option_1" text="Spanish" />
         <word code="menu_language_option_2" text="English" />
         <word code="menu_opt_1" text="Corriente alterna" />
         <word code="menu_opt_2" text="Corriente continua" />
@@ -11,5 +29,6 @@
         <word code="sub_1_menu_opt_2" text="Trifásico." />
         <word code="power" text="Calcular potencia (kVA)." />
         <word code="real_power" text="Calcular potencia real (kW)." />
+        <word code="good_bye_text" text="Closing... See you soon!" />
     </language>
 </app>
