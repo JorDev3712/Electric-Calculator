@@ -1,5 +1,6 @@
 from .controller import Controller
 from .languageController import LanguageController
+from .calculatorController import CalculatorController
 
 class AppController(Controller):
     _exit = False
@@ -7,26 +8,25 @@ class AppController(Controller):
     def __init__(self, languageManager):
         self.__languageManager = languageManager
         self.controllers = [
-            LanguageController(self.__languageManager)
+            LanguageController(self.__languageManager),
+            CalculatorController(self.__languageManager)
         ]
 
     def loader(self):
         self.__languageManager.load()
     
     def execute(self, option:int)->bool:
-        if option == 3:
-            AppController._exit = True
-            print(self.__languageManager.get_word('good_bye_text'))
-        return AppController._exit
+        pass
     
     def show_menu(self)->int:
-        print(f'''{self.__languageManager.get_word('menu_language_title')}:
-            1. {self.__languageManager.get_word('menu_language_option_1')}.
-            2. {self.__languageManager.get_word('menu_language_option_2')}.
-            3. {self.__languageManager.get_word('menu_exit')}.''')
-        return int(input(self.__languageManager.get_word('menu_select_option')))
+        pass
 
     def loop(self):
+        index = 0
         while not AppController._exit:
-            option = self.show_menu()
-            AppController._exit = self.execute(option)
+            if index >= len(self.controllers):
+                AppController._exit = True
+                break
+            self.controllers[index].loop()
+            AppController._exit = self.controllers[index].exit
+            index += 1

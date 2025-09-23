@@ -2,18 +2,22 @@
     <language def="es">
         <word code="title" text="Calculadora para Electricidad" />
         <word code="menu_title" text="Opciones:" />
-        <word code="menu_select_option" text="Selecciona una opción:" />
+        <word code="menu_select_option" text="Selecciona una opción: " />
         <word code="menu_language_title" text="Escoge el idioma: " />
         <word code="menu_language_option_1" text="Español" />
         <word code="menu_language_option_2" text="Inglés" />
         <word code="menu_opt_1" text="Corriente alterna" />
         <word code="menu_opt_2" text="Corriente continua" />
         <word code="menu_exit" text="Salir" />
+        <word code="menu_back" text="Volver al menu anterior." />
         <word code="sub_1_menu_opt_1" text="Monofásico." />
         <word code="sub_1_menu_opt_2" text="Trifásico." />
         <word code="power" text="Calcular potencia (kVA)." />
         <word code="real_power" text="Calcular potencia real (kW)." />
+        <word code="voltage" text="Calcular diferencia de potencial (V)." />
+        <word code="amper" text="Calcular intensidad de corriente (A)." />
         <word code="good_bye_text" text="Cerrando... ¡Hasta pronto!" />
+        <word code="invalid_menu_select_option" text="Por favor, selecciona una opción correcta " />
     </language>
     <language def="en">
         <word code="title" text="Calculadora para Electricidad" />
@@ -25,10 +29,12 @@
         <word code="menu_opt_1" text="Corriente alterna" />
         <word code="menu_opt_2" text="Corriente continua" />
         <word code="menu_exit" text="Salir" />
+        <word code="menu_back" text="Return to the previous menu." />
         <word code="sub_1_menu_opt_1" text="Monofásico." />
         <word code="sub_1_menu_opt_2" text="Trifásico." />
         <word code="power" text="Calcular potencia (kVA)." />
         <word code="real_power" text="Calcular potencia real (kW)." />
         <word code="good_bye_text" text="Closing... See you soon!" />
+        <word code="invalid_menu_select_option" text="Please, choose an correct option." />
     </language>
 </app>
