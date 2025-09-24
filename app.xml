@@ -18,22 +18,26 @@
         <word code="amper" text="Calcular intensidad de corriente (A)." />
         <word code="good_bye_text" text="Cerrando... ¡Hasta pronto!" />
         <word code="invalid_menu_select_option" text="Por favor, selecciona una opción correcta " />
+        <word code="dc_menu_p_input_a" text="Proporciona el voltaje" />
+        <word code="dc_menu_p_input_a" text="Proporciona el amperaje" />
     </language>
     <language def="en">
-        <word code="title" text="Calculadora para Electricidad" />
-        <word code="menu_title" text="Opciones:" />
+        <word code="title" text="Electric Calculator" />
+        <word code="menu_title" text="Options:" />
         <word code="menu_select_option" text="Choose an option: " />
-        <word code="menu_language_title" text="Escoge el idioma:" />
+        <word code="menu_language_title" text="Choose a language:" />
         <word code="menu_language_option_1" text="Spanish" />
         <word code="menu_language_option_2" text="English" />
-        <word code="menu_opt_1" text="Corriente alterna" />
-        <word code="menu_opt_2" text="Corriente continua" />
-        <word code="menu_exit" text="Salir" />
+        <word code="menu_opt_1" text="Alternating Current" />
+        <word code="menu_opt_2" text="Direct Current" />
+        <word code="menu_exit" text="Exit" />
         <word code="menu_back" text="Return to the previous menu." />
-        <word code="sub_1_menu_opt_1" text="Monofásico." />
-        <word code="sub_1_menu_opt_2" text="Trifásico." />
-        <word code="power" text="Calcular potencia (kVA)." />
-        <word code="real_power" text="Calcular potencia real (kW)." />
+        <word code="sub_1_menu_opt_1" text="Monophase." />
+        <word code="sub_1_menu_opt_2" text="Three-phase." />
+        <word code="power" text="Calculate power (kVA)." />
+        <word code="real_power" text="Calculate real power (kW)." />
+        <word code="voltage" text="Calculate potential difference (V)." />
+        <word code="amper" text="Calculate currnet intensity (A)." />
         <word code="good_bye_text" text="Closing... See you soon!" />
         <word code="invalid_menu_select_option" text="Please, choose an correct option." />
     </language>
