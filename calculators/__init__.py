@@ -1,1 +1,1 @@
-from .peukert import MathPeukert
+from .peukertCalculator import PeukertCalculator

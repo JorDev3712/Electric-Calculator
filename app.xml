@@ -12,14 +12,39 @@
         <word code="menu_back" text="Volver al menu anterior." />
         <word code="sub_1_menu_opt_1" text="Monofásico." />
         <word code="sub_1_menu_opt_2" text="Trifásico." />
+        <word code="batery_peukert" text="Calcular autonomia de la batería (Peukert)." />
         <word code="power" text="Calcular potencia (kVA)." />
         <word code="real_power" text="Calcular potencia real (kW)." />
         <word code="voltage" text="Calcular diferencia de potencial (V)." />
         <word code="amper" text="Calcular intensidad de corriente (A)." />
+        <word code="resistance" text="Calcular la resistencia (Ω)." />
         <word code="good_bye_text" text="Cerrando... ¡Hasta pronto!" />
         <word code="invalid_menu_select_option" text="Por favor, selecciona una opción correcta " />
-        <word code="dc_menu_p_input_a" text="Proporciona el voltaje" />
+        <word code="dc_menu_power_title" text="Calcular la potencia" />
+        <word code="dc_menu_power_math" text="P = V x I" />
+        <word code="dc_menu_power_result" text="La potencia es" />
+        <word code="dc_menu_voltage_title" text="Calcular el voltaje" />
+        <word code="dc_menu_voltage_math" text="V = I x R" />
+        <word code="dc_menu_voltage_result" text="El voltaje es" />
+        <word code="dc_menu_resistance_title" text="Calcular la resistencia" />
+        <word code="dc_menu_resistance_math" text="R = V / I" />
+        <word code="dc_menu_resistance_result" text="La resistecia es" />
+        <word code="dc_menu_resistance_error_amper" text="El valor de amperaje no puede ser menor o igual a 0." />
+        <word code="dc_menu_resistance_error" text="Se ha producido un corto circuito." />
+        <word code="dc_menu_amperios_title" text="Calcular la intensidad de corriente" />
+        <word code="dc_menu_amperios_math" text="I = V / R" />
+        <word code="dc_menu_amperios_result" text="La intensidad de corriente es" />
+        <word code="dc_menu_p_input_v" text="Proporciona el voltaje" />
         <word code="dc_menu_p_input_a" text="Proporciona el amperaje" />
+        <word code="dc_menu_input_p" text="Proporciona la potencia" />
+        <word code="dc_menu_input_ohms" text="Proporciona la resistencia" />
+        <word code="dc_menu_peukert_title" text="Calcular el valor de Peukert" />
+        <word code="dc_menu_peukert_math" text="Cp = I^k x t" />
+        <word code="dc_menu_peukert_input_01" text="Proporciona el valor de la corriente total" />
+        <word code="dc_menu_peukert_input_02" text="Proporciona el valor de la bateria (C)" />
+        <word code="dc_menu_peukert_input_03" text="Proporciona los amperios de la bateria (Axh)" />
+        <word code="dc_menu_peukert_input_04" text="Proporciona cantidad bancos en paralelo" />
+        <word code="dc_menu_peukert_results" text="Variables obtenidas" />
     </language>
     <language def="en">
         <word code="title" text="Electric Calculator" />

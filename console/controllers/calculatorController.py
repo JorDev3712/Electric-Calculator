@@ -1,4 +1,6 @@
 from .controller import Controller
+from calculators.directCurrentCalculator import DirectCurrentCalculator
+from calculators.peukertCalculator import PeukertCalculator
 
 class CalculatorController(Controller):
     def __init__(self, languageManager):
@@ -41,9 +43,25 @@ class CalculatorController(Controller):
             else:
                 print(self.__languageManager.get_word('invalid_menu_select_option'))
         elif self._current_menu == 2:
-            if option == 6:
+            if option == 1:
+                DirectCurrentCalculator.dc_power_sub_menu(self.__languageManager)
+            elif option == 2:
+                DirectCurrentCalculator.dc_voltage_sub_menu(self.__languageManager)
+            elif option == 3:
+                DirectCurrentCalculator.dc_resistance_sub_menu(self.__languageManager)
+            elif option == 4:
+                DirectCurrentCalculator.dc_amperios_sub_menu(self.__languageManager)
+            elif option == 4:
+                DirectCurrentCalculator.dc_amperios_sub_menu(self.__languageManager)
+            elif option == 5:
+                PeukertCalculator.dc_sub_menu(self.__languageManager)
+            elif option == 6:
+                self._current_menu = 0
+            elif option == 7:
                 print(self.__languageManager.get_word('good_bye_text'))
                 self.exit = self._mini_loop = True
+            else:
+                print(self.__languageManager.get_word('invalid_menu_select_option'))
         elif self._current_menu == 3:
             if option == 6:
                 print(self.__languageManager.get_word('good_bye_text'))
@@ -87,12 +105,13 @@ class CalculatorController(Controller):
     # Displays the direct current menu
     def show_menu_dc(self)->int:
         print(f'''{self.__languageManager.get_word('menu_title')}
-            1. {self.__languageManager.get_word('power')}
-            2. {self.__languageManager.get_word('real_power')}
-            3. {self.__languageManager.get_word('voltage')}
+            1. {self.__languageManager.get_word('real_power')}
+            2. {self.__languageManager.get_word('voltage')}
+            3. {self.__languageManager.get_word('resistance')}
             4. {self.__languageManager.get_word('amper')}
-            5. {self.__languageManager.get_word('menu_back')}
-            6. {self.__languageManager.get_word('menu_exit')}''')
+            5. {self.__languageManager.get_word('batery_peukert')}
+            6. {self.__languageManager.get_word('menu_back')}
+            7. {self.__languageManager.get_word('menu_exit')}''')
 
     def loop(self):
         while not self._mini_loop:
