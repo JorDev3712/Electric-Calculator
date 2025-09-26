@@ -66,6 +66,10 @@ class CalculatorController(Controller):
         elif self._current_menu == 3:
             if option == 1:
                 AlternaningCurrentCalculator.dc_power_menu(self.__languageManager)
+            elif option == 2:
+                AlternaningCurrentCalculator.dc_real_power_menu(self.__languageManager)
+            elif option == 5:
+                self._current_menu = 1
             elif option == 6:
                 print(self.__languageManager.get_word('good_bye_text'))
                 self.exit = self._mini_loop = True
