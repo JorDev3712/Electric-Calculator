@@ -1,23 +1,23 @@
 <app>
     <language def="es">
         <word code="title" text="Calculadora para Electricidad" />
-        <word code="menu_title" text="Opciones:" />
-        <word code="menu_select_option" text="Selecciona una opción: " />
-        <word code="menu_language_title" text="Escoge el idioma: " />
+        <word code="menu_title" text="Opciones" />
+        <word code="menu_select_option" text="Selecciona una opción" />
+        <word code="menu_language_title" text="Escoge el idioma" />
         <word code="menu_language_option_1" text="Español" />
         <word code="menu_language_option_2" text="Inglés" />
         <word code="menu_opt_1" text="Corriente alterna" />
         <word code="menu_opt_2" text="Corriente continua" />
         <word code="menu_exit" text="Salir" />
-        <word code="menu_back" text="Volver al menu anterior." />
-        <word code="sub_1_menu_opt_1" text="Monofásico." />
-        <word code="sub_1_menu_opt_2" text="Trifásico." />
-        <word code="batery_peukert" text="Calcular autonomia de la batería (Peukert)." />
-        <word code="power" text="Calcular potencia (kVA)." />
-        <word code="real_power" text="Calcular potencia real (kW)." />
-        <word code="voltage" text="Calcular diferencia de potencial (V)." />
-        <word code="amper" text="Calcular intensidad de corriente (A)." />
-        <word code="resistance" text="Calcular la resistencia (Ω)." />
+        <word code="menu_back" text="Volver al menu anterior" />
+        <word code="sub_1_menu_opt_1" text="Monofásico" />
+        <word code="sub_1_menu_opt_2" text="Trifásico" />
+        <word code="batery_peukert" text="Calcular autonomia de la batería (Peukert)" />
+        <word code="power" text="Calcular potencia (kVA)" />
+        <word code="real_power" text="Calcular potencia real (kW)" />
+        <word code="voltage" text="Calcular diferencia de potencial (V)" />
+        <word code="amper" text="Calcular intensidad de corriente (A)" />
+        <word code="resistance" text="Calcular la resistencia (Ω)" />
         <word code="good_bye_text" text="Cerrando... ¡Hasta pronto!" />
         <word code="invalid_menu_select_option" text="Por favor, selecciona una opción correcta " />
         <word code="dc_menu_power_title" text="Calcular la potencia" />
@@ -44,7 +44,15 @@
         <word code="dc_menu_peukert_input_02" text="Proporciona el valor de la bateria (C)" />
         <word code="dc_menu_peukert_input_03" text="Proporciona los amperios de la bateria (Axh)" />
         <word code="dc_menu_peukert_input_04" text="Proporciona cantidad bancos en paralelo" />
+        <word code="dc_menu_peukert_h_01" text="Horas" />
+        <word code="dc_menu_peukert_h_02" text="Minutos" />
         <word code="dc_menu_peukert_results" text="Variables obtenidas" />
+        <word code="dc_menu_peukert_bat_error" text="Por favor, ingresa el valor correcto de una batería." />
+        <word code="ac_menu_power_math" text="S = P x cosφ" />
+        <word code="ac_menu_power_input_01" text="Proporciona la potencia" />
+        <word code="ac_menu_power_input_02" text="Proporciona el factor de potencia (cosφ)" />
+        <word code="ac_menu_power_error_01" text="Por favor, proporciona valores numéricos." />
+        <word code="ac_menu_power_results" text="La potencia aparente o real es" />
     </language>
     <language def="en">
         <word code="title" text="Electric Calculator" />

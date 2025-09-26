@@ -1,5 +1,6 @@
 from .controller import Controller
 from calculators.directCurrentCalculator import DirectCurrentCalculator
+from calculators.alternatingCurrentCalculator import AlternaningCurrentCalculator
 from calculators.peukertCalculator import PeukertCalculator
 
 class CalculatorController(Controller):
@@ -16,7 +17,7 @@ class CalculatorController(Controller):
         self._current_menu = 0
 
         # It allows to know the phase system
-        self._isThirdPhase = False
+        AlternaningCurrentCalculator.isThirdPhase = False
 
     # This method will execute all the actions in the menus
     def execute(self, option:int)->bool:
@@ -33,10 +34,10 @@ class CalculatorController(Controller):
                 print(self.__languageManager.get_word('invalid_menu_select_option'))
         elif self._current_menu == 1:
             if option == 1:
-                self._isThirdPhase = False
+                AlternaningCurrentCalculator.isThirdPhase = False
                 self._current_menu = 3
             if option == 2:
-                self._isThirdPhase = True
+                AlternaningCurrentCalculator.isThirdPhase = True
                 self._current_menu = 3
             elif option == 3:
                 self._current_menu = 0
@@ -63,7 +64,9 @@ class CalculatorController(Controller):
             else:
                 print(self.__languageManager.get_word('invalid_menu_select_option'))
         elif self._current_menu == 3:
-            if option == 6:
+            if option == 1:
+                AlternaningCurrentCalculator.dc_power_menu(self.__languageManager)
+            elif option == 6:
                 print(self.__languageManager.get_word('good_bye_text'))
                 self.exit = self._mini_loop = True
         return self._mini_loop
@@ -82,7 +85,7 @@ class CalculatorController(Controller):
             self.show_menu_dc()
         elif self._current_menu == 3:
             self.show_menu_ac()
-        return int(input(f'{self.__languageManager.get_word('menu_select_option')}'))
+        return int(input(f'{self.__languageManager.get_word('menu_select_option')}: '))
     
     # Displays the fase menu between one fase or third fase
     def show_sub_menu(self)->int:
@@ -94,7 +97,7 @@ class CalculatorController(Controller):
 
     # Displays the alternating current menu
     def show_menu_ac(self)->int:
-        print(f'''{self.__languageManager.get_word('menu_title')} {self.__languageManager.get_word('sub_1_menu_opt_1' if self._isThirdPhase else 'sub_1_menu_opt_2')}
+        print(f'''{self.__languageManager.get_word('menu_title')} {self.__languageManager.get_word('sub_1_menu_opt_2' if AlternaningCurrentCalculator.isThirdPhase else 'sub_1_menu_opt_1')}
             1. {self.__languageManager.get_word('power')}
             2. {self.__languageManager.get_word('real_power')}
             3. {self.__languageManager.get_word('voltage')}

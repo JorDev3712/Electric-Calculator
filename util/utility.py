@@ -3,6 +3,22 @@ import ctypes
 class Utility:
 
     @staticmethod
+    def parseInt(textValue: str)->tuple:
+        try:
+            number = int(textValue)
+            return (True, number)
+        except:
+            return (False, 0)
+        
+    @staticmethod
+    def parseFloat(textValue: str)->tuple:
+        try:
+            number = float(textValue)
+            return (True, number)
+        except:
+            return (False, 0)
+
+    @staticmethod
     def __getKeyBoardLayoutName():
         try:
             user32 = ctypes.windll.user32
