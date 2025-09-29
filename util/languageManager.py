@@ -4,7 +4,18 @@ from dominion.language import Language
 
 class LanguageManager:
     def __init__(self, root_folder: str, fileName: str):
-        self.languages = dict()
+        self.languages = dict({
+            'en_app_by': 'Application by',
+            'es_app_by': 'Aplicación creada por',
+            'en_app_loading': 'Loading xml file of languages...',
+            'en_app_loading_s': 'Searching for words...',
+            'en_app_loading_ok': 'words found!',
+            'es_app_loading_ok2': '',
+            'es_app_loading': 'Cargando archivo xml de idiomas...',
+            'es_app_loading_s': 'Buscando palabras...',
+            'es_app_loading_ok': 'palabras encontradas!',
+            'es_app_loading_ok2': '¡',
+        })
         self._filePath = os.path.join(root_folder, fileName)
         self._tree = None
 
@@ -34,16 +45,16 @@ class LanguageManager:
     def load(self):
         self._tree = xmlTree.parse(self._filePath)
         root = self._tree.getroot()
-        print('Loading xml....')
+        print(self.get_word('app_loading'))
         # Finding the language elements
         for lanElement in root.findall('language'):
             # Gets the value of the def attribute
             id = lanElement.get('def')
-            print(f'Language code={id} found! Searching for words...')
+            print(self.get_word('app_loading_s'))
             # Finding the word elements
             counter_words = 0
             for wordElement in lanElement.findall('word'):
                 self.__add_new_language(id, wordElement.get('code'), wordElement.get('text'))
                 counter_words += 1
-            print(f'{counter_words} words found')
+            print(f'{self.get_word('app_loading_ok2')}{counter_words} {self.get_word('app_loading_ok')}')
             

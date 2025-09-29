@@ -1,4 +1,5 @@
 from .controller import Controller
+from util.utility import Utility
 
 class LanguageController(Controller):
     def __init__(self, languageManager):
@@ -21,11 +22,17 @@ class LanguageController(Controller):
         return self._mini_loop
 
     def show_menu(self)->int:
-        print(f'''{self.__languageManager.get_word('menu_language_title')}
+        print(f'''{self.__languageManager.get_word('menu_language_title')}:
             1. {self.__languageManager.get_word('menu_language_option_1')}.
             2. {self.__languageManager.get_word('menu_language_option_2')}.
             3. {self.__languageManager.get_word('menu_exit')}.''')
-        return int(input(self.__languageManager.get_word('menu_select_option')))
+        
+        result, option = Utility.parseInt(input(f'{self.__languageManager.get_word('menu_select_option')}: '))
+        if not result:
+            print(self.__languageManager.get_word('invalid_menu_select_option'))
+            option = -1
+
+        return option
     
     def loop(self):
         while not self._mini_loop:

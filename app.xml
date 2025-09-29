@@ -16,10 +16,11 @@
         <word code="power" text="Calcular potencia (kVA)" />
         <word code="real_power" text="Calcular potencia real (kW)" />
         <word code="voltage" text="Calcular diferencia de potencial (V)" />
+        <word code="neutral" text="Neutro" />
         <word code="amper" text="Calcular intensidad de corriente (A)" />
         <word code="resistance" text="Calcular la resistencia (Ω)" />
         <word code="good_bye_text" text="Cerrando... ¡Hasta pronto!" />
-        <word code="invalid_menu_select_option" text="Por favor, selecciona una opción correcta " />
+        <word code="invalid_menu_select_option" text="Por favor, selecciona una opción correcta." />
         <word code="dc_menu_power_title" text="Calcular la potencia" />
         <word code="dc_menu_power_math" text="P = V x I" />
         <word code="dc_menu_power_result" text="La potencia es" />
@@ -49,32 +50,95 @@
         <word code="dc_menu_peukert_results" text="Variables obtenidas" />
         <word code="dc_menu_peukert_bat_error" text="Por favor, ingresa el valor correcto de una batería." />
         <word code="ac_menu_power_math" text="S = Vrms x Irms" />
+        <word code="ac_menu_power_math_third" text="S = Vrms x Irms x √3" />
         <word code="ac_menu_power_input_01" text="Proporciona el valor eficaz del voltaje" />
         <word code="ac_menu_power_input_02" text="Proporciona el factor de potencia (cosφ)" />
         <word code="ac_menu_power_input_03" text="Proporciona el valor eficaz de la corriente" />
+        <word code="ac_menu_power_input_04" text="Proporciona la potencia (W)" />
         <word code="ac_menu_power_error_01" text="Por favor, proporciona valores numéricos." />
         <word code="ac_menu_power_results" text="La potencia aparente es" />
         <word code="ac_menu_r_power_math" text="P = Vrms x Irms x cosφ" />
-        <word code="ac_menu_r_power_results" text="La potencial real o consumida es" />
+        <word code="ac_menu_r_power_math_third" text="P = Vrms x Irms x cosφ x √3" />
+        <word code="ac_menu_r_power_results" text="La potencia real o consumida es" />
+        <word code="ac_menu_voltage_input_01" text="¿La conexión es estrella? yes/no" />
+        <word code="ac_menu_voltage_math" text="V = P / Irms x cosφ" />
+        <word code="ac_menu_voltage_math_third_01" text="Vf = P / Irms x cosφ" />
+        <word code="ac_menu_voltage_math_third_02" text="VLinea = Vf / √3" />
+        <word code="ac_menu_voltage_results" text="La diferencia de potencial es" />
+        <word code="ac_menu_current_math" text="I = P / Vrms x cosφ x √3" />
+        <word code="ac_menu_amper_math_third_01" text="If = P / Vrms x cosφ" />
+        <word code="ac_menu_amper_math_third_02" text="ILinea = If x √3" />
+        <word code="ac_menu_current_results" text="La intensidad de corriente es" />
     </language>
     <language def="en">
         <word code="title" text="Electric Calculator" />
-        <word code="menu_title" text="Options:" />
-        <word code="menu_select_option" text="Choose an option: " />
-        <word code="menu_language_title" text="Choose a language:" />
+        <word code="menu_title" text="Options" />
+        <word code="menu_select_option" text="Choose an option" />
+        <word code="menu_language_title" text="Choose a language" />
         <word code="menu_language_option_1" text="Spanish" />
         <word code="menu_language_option_2" text="English" />
         <word code="menu_opt_1" text="Alternating Current" />
         <word code="menu_opt_2" text="Direct Current" />
         <word code="menu_exit" text="Exit" />
         <word code="menu_back" text="Return to the previous menu." />
-        <word code="sub_1_menu_opt_1" text="Monophase." />
-        <word code="sub_1_menu_opt_2" text="Three-phase." />
-        <word code="power" text="Calculate power (kVA)." />
-        <word code="real_power" text="Calculate real power (kW)." />
-        <word code="voltage" text="Calculate potential difference (V)." />
-        <word code="amper" text="Calculate currnet intensity (A)." />
+        <word code="sub_1_menu_opt_1" text="Monophase" />
+        <word code="sub_1_menu_opt_2" text="Three-phase" />
+        <word code="batery_peukert" text="Calculate a battery life (Peukert)" />
+        <word code="power" text="Calculate power (kVA)" />
+        <word code="real_power" text="Calculate real power (kW)" />
+        <word code="voltage" text="Calculate potential difference (V)" />
+        <word code="neutral" text="Neutral" />
+        <word code="amper" text="Calculate current intensity (A)" />
+        <word code="resistance" text="Calculate the resistance (Ω)" />
         <word code="good_bye_text" text="Closing... See you soon!" />
         <word code="invalid_menu_select_option" text="Please, choose an correct option." />
+        <word code="dc_menu_power_title" text="Calculate the power" />
+        <word code="dc_menu_power_math" text="P = V x I" />
+        <word code="dc_menu_power_result" text="The power is" />
+        <word code="dc_menu_voltage_title" text="Calculate the voltage" />
+        <word code="dc_menu_voltage_math" text="V = I x R" />
+        <word code="dc_menu_voltage_result" text="The voltage is" />
+        <word code="dc_menu_resistance_title" text="Calculate the resistance" />
+        <word code="dc_menu_resistance_math" text="R = V / I" />
+        <word code="dc_menu_resistance_result" text="The resistance is" />
+        <word code="dc_menu_resistance_error_amper" text="The amperage value can't be less than or equal to 0." />
+        <word code="dc_menu_resistance_error" text="A short circuit has ocurred." />
+        <word code="dc_menu_amperios_title" text="Calculate the current intensity" />
+        <word code="dc_menu_amperios_math" text="I = V / R" />
+        <word code="dc_menu_amperios_result" text="The current intensity is" />
+        <word code="dc_menu_p_input_v" text="Provide the voltage" />
+        <word code="dc_menu_p_input_a" text="Provide the amperage" />
+        <word code="dc_menu_input_p" text="Provide the power" />
+        <word code="dc_menu_input_ohms" text="Provide the resistance" />
+        <word code="dc_menu_peukert_title" text="Calculate the value of Peukert" />
+        <word code="dc_menu_peukert_math" text="Cp = I^k x t" />
+        <word code="dc_menu_peukert_input_01" text="Provide the total current value" />
+        <word code="dc_menu_peukert_input_02" text="Provide the battery value (C)" />
+        <word code="dc_menu_peukert_input_03" text="Provide the battery amperage (Axh)" />
+        <word code="dc_menu_peukert_input_04" text="Provide the number of battery banks in parallel" />
+        <word code="dc_menu_peukert_h_01" text="Hours" />
+        <word code="dc_menu_peukert_h_02" text="Minutes" />
+        <word code="dc_menu_peukert_results" text="Variables obtained" />
+        <word code="dc_menu_peukert_bat_error" text="Please, enter a correct battery value" />
+        <word code="ac_menu_power_math" text="S = Vrms x Irms" />
+        <word code="ac_menu_power_math_third" text="S = Vrms x Irms x √3" />
+        <word code="ac_menu_power_input_01" text="Provide the effective value of the voltage" />
+        <word code="ac_menu_power_input_02" text="Provide the power factor (cosφ)" />
+        <word code="ac_menu_power_input_03" text="Provide the effective value of the current" />
+        <word code="ac_menu_power_input_04" text="Provide the power (W)" />
+        <word code="ac_menu_power_error_01" text="Please, enter only numeric values." />
+        <word code="ac_menu_power_results" text="The apparent power is" />
+        <word code="ac_menu_r_power_math" text="P = Vrms x Irms x cosφ" />
+        <word code="ac_menu_r_power_math_third" text="P = Vrms x Irms x cosφ x √3" />
+        <word code="ac_menu_r_power_results" text="The actual or consumed power is" />
+        <word code="ac_menu_voltage_input_01" text="Is it a star connection? yes/no" />
+        <word code="ac_menu_voltage_math" text="V = P / Irms x cosφ" />
+        <word code="ac_menu_voltage_math_third_01" text="Vf = P / Irms x cosφ" />
+        <word code="ac_menu_voltage_math_third_02" text="VLine = Vf / √3" />
+        <word code="ac_menu_voltage_results" text="The potential difference is" />
+        <word code="ac_menu_current_math" text="I = P / Vrms x cosφ x √3" />
+        <word code="ac_menu_amper_math_third_01" text="If = P / Vrms x cosφ" />
+        <word code="ac_menu_amper_math_third_02" text="ILine = If x √3" />
+        <word code="ac_menu_current_results" text="The current intensity is" />
     </language>
 </app>
